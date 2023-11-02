@@ -1,0 +1,12 @@
+﻿<h1> Lista de autores</h1>
+<div id="ListagemAutoresTabela">
+	@await Component.InvokeAsync("ListagemAutores")
+</div>
+
+<script>
+    
+    function LoadData() {
+        $("ListagemAutoresTabela").load("/Autor/Listagem");
+    }
+
+</script>

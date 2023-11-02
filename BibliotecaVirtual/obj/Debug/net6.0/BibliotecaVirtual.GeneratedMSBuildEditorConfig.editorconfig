@@ -16,6 +16,14 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Projetos\BibliotecaVirtual\BibliotecaVirtual
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Projetos/BibliotecaVirtual/BibliotecaVirtual/Views/Autor/Components/ListagemAutores/ListagemAutor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0b3JcQ29tcG9uZW50c1xMaXN0YWdlbUF1dG9yZXNcTGlzdGFnZW1BdXRvci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Projetos/BibliotecaVirtual/BibliotecaVirtual/Views/Autor/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0b3JcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Projetos/BibliotecaVirtual/BibliotecaVirtual/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
