@@ -1,0 +1,16 @@
+﻿<h1> Lista de livros</h1>
+<div>
+    <!-- FILTRO -->
+    
+</div>
+<div id="ListagemLivrosTabela">
+    @await Component.InvokeAsync("ListagemLivrosInclude")
+</div>
+
+<script>
+
+    function LoadData() {
+        $("ListagemLivrosTabela").load("/Livro/Listagem");
+    }
+
+</script>

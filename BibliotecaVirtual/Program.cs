@@ -11,8 +11,10 @@ builder.Services.AddDbContext<BibliotecaVirtualContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
 builder.Services.AddScoped<AutorService>();
+builder.Services.AddScoped<EditoraService>();
+builder.Services.AddScoped<LivroService>();
 
-    var app = builder.Build();
+var app = builder.Build();
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())

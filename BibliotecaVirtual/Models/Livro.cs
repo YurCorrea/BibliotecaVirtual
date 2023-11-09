@@ -27,6 +27,7 @@ namespace BibliotecaVirtual.Models
 
         //-----------------------------------
         [Required(ErrorMessage = "Campo {0} é obrigatório")]
+        [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}")]
         public DateTime DataPublicacao { get; set; }
 
         public int AutorId { get; set; }
@@ -35,6 +36,20 @@ namespace BibliotecaVirtual.Models
         public int EditoraId { get; set; }
         public virtual Editora Editora { get; set; }
 
-
+        public string GetNomeCategoria()
+        {
+            switch(Categoria)
+            {
+                case CategoriaLivroEnum.Aventura:
+                    return "Aventura";
+                case CategoriaLivroEnum.Fantasia:
+                    return "Fantasia";
+                case CategoriaLivroEnum.AutoAjuda:
+                    return "AutoAjuda";
+                case CategoriaLivroEnum.Culinaria:
+                    return "Culinaria";
+            }
+            return "Sem categoria";
+        }
     }
 }

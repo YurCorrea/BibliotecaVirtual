@@ -20,4 +20,8 @@
 	 <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.15" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Views\Editora\Components\" />
+  </ItemGroup>
+
 </Project>

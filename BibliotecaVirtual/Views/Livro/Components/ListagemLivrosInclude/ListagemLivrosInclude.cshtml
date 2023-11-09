@@ -1,0 +1,42 @@
+﻿@model IEnumerable<BibliotecaVirtual.Models.Livro>
+<table id="CaixaDataTable" class="overlayTable table tabela-listagem-azul table-responsive">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nome</th>
+            <th>Descrição</th>
+            <th>SerialNumber</th>
+            <th>Categoria</th>
+            <th>Data Publicação</th>
+            <th>Nome Autor</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Id)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Nome)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Descricao)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SerialNumber)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.GetNomeCategoria())
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DataPublicacao)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Autor.Nome)
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
